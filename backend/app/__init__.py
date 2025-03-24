@@ -1,0 +1,1 @@
+# CarePal EMR FastAPI Backend 
