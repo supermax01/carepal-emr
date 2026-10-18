@@ -1,0 +1,8 @@
+* text=auto
+# Keep GitHub language stats focused on the app and API code
+android/** linguist-vendored
+ios/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+web/** linguist-vendored

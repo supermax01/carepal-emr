@@ -1,5 +1,22 @@
 # CarepalEMR: Integration of Flutter with OpenEMR via HL7 FHIR
 
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![HL7 FHIR R4](https://img.shields.io/badge/HL7%20FHIR-R4-E8542E)](https://hl7.org/fhir/R4/)
+[![SMART on FHIR](https://img.shields.io/badge/SMART%20on%20FHIR-OAuth%202.0%20%2B%20PKCE-4B5563)](https://hl7.org/fhir/smart-app-launch/)
+[![OpenEMR](https://img.shields.io/badge/OpenEMR-FHIR%20API-2E7D32)](https://www.open-emr.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+> **Status:** research prototype (March 2025), part of the [Carepal](https://github.com/supermax01/Carepal) project.
+> A patient-facing Flutter client that authenticates against OpenEMR's SMART-on-FHIR OAuth 2.0 server with PKCE
+> and reads the patient's own FHIR R4 resources (Patient, Observation, MedicationRequest, Appointment, AllergyIntolerance)
+> through a thin FastAPI proxy. Not a medical device; not for clinical use.
+>
+> **Configuration:** copy `backend/.env.example` to `backend/.env`, then replace the `YOUR_OPENEMR_HOST`,
+> `YOUR_OPENEMR_CLIENT_ID`, and `YOUR_OPENEMR_CLIENT_SECRET` placeholders in `lib/main.dart`,
+> `lib/services/auth_service.dart`, and `lib/models/api_client.dart` with the values from your OpenEMR
+> *API Clients* registration. Never commit real credentials.
+
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
